@@ -16,6 +16,13 @@ public class Main {
             System.out.println("3 = Realizar Check-in");
             System.out.println("4 = Realizar Check-out");
             System.out.println("5 = Listar Quartos Disponíveis");
+//            System.out.println("6 = Listar Quartos Ocupados");
+//            System.out.println("7 = Listar Hóspedes Cadastrados");
+//            System.out.println("8 = Cadastrar Funcionários");
+//            System.out.println("9 = Editar informações dos hóspedes");
+//            System.out.println("10 = Editar Informações dos Funcionários");
+//            System.out.println("11 = Visualizar Histórico de estadias");
+//            System.out.println("12 = Calcular Salário dos Funcionários");
             System.out.println("6 = Criar Reserva");
             System.out.println("7 = Cancelar Reserva");
             System.out.println("8 = Sair\n");
@@ -53,7 +60,8 @@ public class Main {
 
                         System.out.print("\nDigite o preço da diária (Em R$ ): ");
                         double preco = scanner.nextDouble();
-
+                        
+                        
                         Quarto quarto = new Quarto(numero, tipo, capacidade, preco);
                         hotel.cadastrarQuarto(quarto);
                         break;
